@@ -18,7 +18,7 @@
 			<p>My module is pretty easy to use. Just plug it into your code by javascript tag <code>&lt;script src="helper.js"&gt;</code> </p>
 			<p>Module creates object HLP which contains some utility methods and objects. Below you can find brief description for each one.</p>
 			<article>
-				<h2>HLP.whatBrowser</h2>
+				<h1>HLP.whatBrowser</h1>
 				<p>A function which returns specified data depending on a user's browser<p>
 				<h3>Syntax</h3>
 				<code>HLP.whatBrowser({'browser name [browser version]':'string to return by function', ...});</code>
@@ -28,7 +28,7 @@
 
 			</article>
 			<article>
-				<h2>HLP.whatDevice</h2>
+				<h1>HLP.whatDevice</h1>
 				<p>A function which defines whether it is executed on mobile device<p>
 				<h3>Syntax</h3>
 				<code>
@@ -45,17 +45,41 @@ HLP.whatDevice.any(); // returns true on any mobile device
 				<code> var currentBrowser = HLP.whatDevice.any();</code>
 				<p>Where variable currentBrowser will recieve value '<script>document.write(HLP.whatDevice.any().toString());</script>'. Which is result for current platform (mobile or not)</p>
 
-			</article>			
+			</article>
+            <article>
+                <h1>HLP.inlineStyle</h1>
+                <p>A function which defines whether it is executed on mobile device<p>
+                <h3 style="color: #f00;" id="inlineStyleExample">example</h3>
+                <code>
+					<pre>
+HLP.whatDevice.iOS(); // returns true on iOS Devices
+HLP.whatDevice.Android(); // returns true on Android Devices
+HLP.whatDevice.BlackBerry(); // returns true on BlackBerry Devices
+HLP.whatDevice.Opera(); // returns true on any Devices with Opera Mini or Opera Mobile browser
+HLP.whatDevice.Windows(); // returns true on Devices with IE Mobile browser
+HLP.whatDevice.any(); // returns true on any mobile device
+					</pre>
+                </code>
+                <h3>using example:</h3>
+                <code> var currentBrowser = HLP.whatDevice.any();</code>
+                <p>Where variable currentBrowser will recieve value '<script>document.write(HLP.whatDevice.any().toString());</script>'. Which is result for current platform (mobile or not)</p>
+
+            </article>
 		
 		</section>
 		
 		<!-- // <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 		
 		<script>
+            var inlineStyleElement = document.querySelector("#inlineStyleExample");
 			console.log(HLP.whatBrowser({"firefox":"firefox","ie":"explorer","chrome safari":"webkit","opera":"opera"}));
 			if (HLP.whatDevice.any()) {
 				console.log(HLP.whatDevice.any());
 			}
+            console.log('inline style exis:');
+            console.log(HLP.inlineStyle(inlineStyleElement, 'color'));
+            console.log(HLP.inlineStyle(inlineStyleElement, 'font-size'));
+
 		</script>
 	</body>
 </html>
