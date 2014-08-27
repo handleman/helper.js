@@ -1,5 +1,5 @@
 #helper.js (pure js version)
-=========
+
 
 Module in which i am collecting functions and utility objects i use in my daily tasks.I am glad to share it with others.
 
@@ -8,7 +8,7 @@ Module in which i am collecting functions and utility objects i use in my daily 
 My module is pretty easy to use. Just plug it into your code by javascript tag `<script src="helper.js">`
 
 Module creates object `HLP` which contains some utility methods and objects. Below you can find brief description for each one.
-=========
+
 
 ###HLP.whatBrowser
 
@@ -27,7 +27,6 @@ var currentBrowser = HLP.whatBrowser({"firefox":"Current browser is firefox","ie
 ```
 
 Where variable currentBrowser will recieve value ' based on webkit'. Which is result for current browser
-=========
 
 ###HLP.whatDevice
 
@@ -51,7 +50,6 @@ var currentBrowser = HLP.whatDevice.any();
 ```
 
 Where variable currentBrowser will recieve value 'false'. Which is result for current platform (mobile or not)
-=========
 
 ###HLP.inlineStyle
 
