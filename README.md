@@ -1,4 +1,4 @@
-#helper.js (pure js version)
+#HLP module (pure js version)
 
 
 Module in which i am collecting functions and utility objects i use in my daily tasks.I am glad to share it with others.
