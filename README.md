@@ -1,9 +1,9 @@
-#HLP module (pure js version)
+# HLP module (pure js version)
 
 
 Module in which i am collecting functions and utility objects i use in my daily tasks.I am glad to share it with others.
 
-##Connection and use
+## Connection and use
 
 My module is pretty easy to use. Just plug it into your code by javascript tag `<script src="helper.js">`
 
@@ -11,7 +11,7 @@ Module creates object `HLP` which contains some utility methods and objects. Bel
 
 ===
 
-###HLP.whatBrowser
+### HLP.whatBrowser
 
 A function which returns specified data depending on a user's browser
 
@@ -31,7 +31,7 @@ Where variable currentBrowser will recieve value ' based on webkit'. Which is re
 
 ===
 
-###HLP.whatDevice
+### HLP.whatDevice
 
 A function which defines whether it is executed on mobile device
 
@@ -56,7 +56,7 @@ Where variable currentBrowser will recieve value 'false'. Which is result for cu
 
 ===
 
-###HLP.inlineStyle
+### HLP.inlineStyle
 
 A function which returns value of inline style attribute accordingly defined css property.
 
